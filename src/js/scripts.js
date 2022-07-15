@@ -1,6 +1,8 @@
 //
 // Scripts
-// 
+//
+
+getage();
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -47,3 +49,9 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function getage(){
+    let nowyear = new Date().getFullYear();
+    let age = nowyear-1995;
+    document.getElementById('nameandage').innerHTML = "김지웅 (만 "+age+"세)";
+}
